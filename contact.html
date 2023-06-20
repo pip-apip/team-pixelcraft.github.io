@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap5 contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="form-area">
+        <div class="container">
+            <div class="row single-form g-0">
+                <div class="col-sm-12 col-lg-6">
+                    <div class="left">
+                        <h2><span>Contact Us for</span><br>[<span class="typing"></span>]</h2>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <div class="right">
+                       <i class="fa fa-caret-left"></i>
+                        <form method="post">
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="nama" aria-describedby="emailHelp" name="nama">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                          </div>
+						              <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Subject</label>
+                            <select class="form-select" aria-label="Default select example" id="subject">
+                              <option selected>------</option>
+                              <option value="Wedding">Wedding</option>
+                              <option value="personal-web">Personal-Website</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Message</label>
+                              <textarea type="password" class="form-control" id="chat" name="message"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary" onclick="whatsapp()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script>
+	function whatsapp(){
+		var nama = document.getElementById("nama").value
+		var email = document.getElementById("email").value
+		var subject = document.getElementById("subject").value
+		var message_chat = document.getElementById("chat").value
+		
+		var data_text = "https://wa.me/6289502234885?text="+"Nama:"+nama+",Email:"+email+",Perihal:"+subject+",isi:"+message_chat;	
+		window.open(data_text,"_blank").focus();
+  }
+  var data_service = "Wedding-Organizer Personal-Website".split(" ")
+  var typing=new Typed(".typing", {
+                strings:data_service,
+                typeSpeed: 50,
+                backSpeed: 30,
+                loop: true,
+            });
+            
+</script>
+</html>
