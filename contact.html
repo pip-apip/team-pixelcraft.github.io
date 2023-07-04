@@ -3,7 +3,7 @@
 <!--divinectorweb.com-->
 <head>
     <meta charset="UTF-8">
-    <title>Pixel Craft Team - Form Contact</title>
+    <title>Pixel Craft Team - Form</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,19 +49,20 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
 <script>
 	function whatsapp(){
-		var nama = document.getElementById("nama").value
-		var email = document.getElementById("email").value
-		var subject = document.getElementById("subject").value
-		var message_chat = document.getElementById("chat").value
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var subject = document.getElementById("subject").value;
+		var message_chat = document.getElementById("chat").value;
 		
-		var data_text = "https://wa.me/6289502234885?text="+"Nama:"+nama+",Email:"+email+",Perihal:"+subject+",isi:"+message_chat;	
+		var data_text = "https://wa.me/6285697755779?text="+"Halo, saya ingin menghubungi Anda mengenai " + subject + "%0A%0A"+"Nama: " + nama + "%0A"+"Email: " + email + "%0A"+"Pesan: " +message_chat;	
 		window.open(data_text,"_blank").focus();
   }
   var data_service = "Wedding-Organizer Personal-Website".split(" ")
